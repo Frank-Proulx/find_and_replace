@@ -7,8 +7,6 @@ class Search
     @text = text
   end
   
-# .delete_if{|x| x.match(/[^a-z]/i)}
-
   def find_and_replace(search_word, replace_word)
     word_array = @text.split(' ')
     counter = 0
