@@ -19,6 +19,9 @@ class Search
       if clean_word == search_word
         word_array[counter] = replace_word.split('').push(punctuation).join('')
       end
+      if clean_word == search_word.capitalize()
+        word_array[counter] = replace_word.capitalize().split('').push(punctuation).join('')
+      end
       counter += 1
     end
     word_array.join(' ')
